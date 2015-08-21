@@ -27,6 +27,7 @@
             <Dependency>btrfs-progs</Dependency>
             <Dependency>yum-utils</Dependency>
             <Dependency>yum-metadata-parser</Dependency>
+            <Dependency>pigz</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python2.7</Path>
@@ -83,7 +84,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2015-08-21</Date>
             <Version>1.2.12</Version>
             <Comment>Packaging update</Comment>
