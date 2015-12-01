@@ -84,8 +84,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2015-08-21</Date>
+        <Update release="5">
+            <Date>2015-12-01</Date>
             <Version>1.2.12</Version>
             <Comment>Packaging update</Comment>
             <Name>Ikey Doherty</Name>
