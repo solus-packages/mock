@@ -1,6 +1,6 @@
 name       : mock
 version    : 1.2.12
-release    : 5
+release    : 6
 source     :
     - https://git.fedorahosted.org/cgit/mock.git/snapshot/mock-1.2.12.tar.xz : 4bb5617d9f187aa54983a5798b587138f1871adcfdd8ec510089f4439ada15e5
 license    : GPL-2.0
