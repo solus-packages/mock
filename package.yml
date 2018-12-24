@@ -1,9 +1,10 @@
 name       : mock
 version    : 1.2.12
-release    : 6
+release    : 7
 source     :
-    - https://git.fedorahosted.org/cgit/mock.git/snapshot/mock-1.2.12.tar.xz : 4bb5617d9f187aa54983a5798b587138f1871adcfdd8ec510089f4439ada15e5
-license    : GPL-2.0
+    - https://github.com/rpm-software-management/mock/archive/mock-1.2.12.tar.gz : cc13e93e969a145497f33484807d1fb06ab08880814229bc39bbe06d9c197c0d
+license    : GPL-2.0-or-later
+component  : programming.tools
 summary    : RPM Chroot builder
 description: |
     RPM Chroot builder

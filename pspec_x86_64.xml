@@ -2,10 +2,11 @@
     <Source>
         <Name>mock</Name>
         <Packager>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>programming.tools</PartOf>
         <Summary xml:lang="en">RPM Chroot builder</Summary>
         <Description xml:lang="en">RPM Chroot builder
 </Description>
@@ -16,80 +17,169 @@
         <Summary xml:lang="en">RPM Chroot builder</Summary>
         <Description xml:lang="en">RPM Chroot builder
 </Description>
-        <PartOf>programming.devel</PartOf>
-        <RuntimeDependencies>
-            <Dependency>usermode</Dependency>
-            <Dependency>python-requests</Dependency>
-            <Dependency>yum</Dependency>
-            <Dependency>rpm</Dependency>
-            <Dependency>lvm2</Dependency>
-            <Dependency>createrepo_c</Dependency>
-            <Dependency>btrfs-progs</Dependency>
-            <Dependency>yum-utils</Dependency>
-            <Dependency>yum-metadata-parser</Dependency>
-            <Dependency>pigz</Dependency>
-        </RuntimeDependencies>
+        <PartOf>programming.tools</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/python2.7</Path>
-            <Path fileType="executable">/usr/sbin</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib64/sysusers.d</Path>
-            <Path fileType="data">/usr/share/bash-completion</Path>
-            <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="config">/etc/security/console.apps</Path>
-            <Path fileType="config">/etc/pam.d/mock</Path>
-            <Path fileType="config">/etc/pki/mock</Path>
-            <Path fileType="config">/etc/mock/fedora-23-aarch64.cfg</Path>
-            <Path fileType="config">/etc/mock/epel-5-ppc.cfg</Path>
             <Path fileType="config">/etc/mock/epel-5-i386.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-s390.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-ppc64le.cfg</Path>
+            <Path fileType="config">/etc/mock/epel-5-ppc.cfg</Path>
+            <Path fileType="config">/etc/mock/epel-5-x86_64.cfg</Path>
             <Path fileType="config">/etc/mock/epel-6-i386.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-rawhide-ppc64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-ppc64.cfg</Path>
             <Path fileType="config">/etc/mock/epel-6-ppc64.cfg</Path>
+            <Path fileType="config">/etc/mock/epel-6-x86_64.cfg</Path>
+            <Path fileType="config">/etc/mock/epel-7-x86_64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-aarch64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-armhfp.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-i386.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-ppc64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-ppc64le.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-s390.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-s390x.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-21-x86_64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-aarch64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-armhfp.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-i386.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-ppc64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-ppc64le.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-s390.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-s390x.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-22-x86_64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-23-aarch64.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-23-armhfp.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-23-i386.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-23-ppc64.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-23-ppc64le.cfg</Path>
-            <Path fileType="config">/etc/mock/epel-6-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-s390.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-23-s390.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-23-s390x.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-23-armhfp.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-23-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/site-defaults.cfg</Path>
-            <Path fileType="config">/etc/mock/epel-7-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/epel-5-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-rawhide-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-rawhide-i386.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-ppc64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-23-i386.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-aarch64.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-rawhide-aarch64.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-rawhide-armhfp.cfg</Path>
-            <Path fileType="config">/etc/mock/logging.ini</Path>
-            <Path fileType="config">/etc/mock/fedora-23-s390.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-rawhide-i386.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-rawhide-ppc64.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-rawhide-ppc64le.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-armhfp.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-aarch64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-rawhide-sparc.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-i386.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-x86_64.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-rawhide-s390x.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-i386.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-s390x.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-ppc64le.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-22-s390x.cfg</Path>
             <Path fileType="config">/etc/mock/fedora-rawhide-s390.cfg</Path>
-            <Path fileType="config">/etc/mock/fedora-21-armhfp.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-rawhide-s390x.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-rawhide-sparc.cfg</Path>
+            <Path fileType="config">/etc/mock/fedora-rawhide-x86_64.cfg</Path>
+            <Path fileType="config">/etc/mock/logging.ini</Path>
+            <Path fileType="config">/etc/mock/site-defaults.cfg</Path>
+            <Path fileType="config">/etc/pam.d/mock</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-CentOS-5</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-CentOS-6</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-CentOS-7</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-CentOS-Debug-6</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-CentOS-Security-6</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-CentOS-Testing-6</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-EPEL-5</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-EPEL-6</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-EPEL-7</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-fedora-21-primary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-fedora-21-secondary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-fedora-22-primary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-fedora-22-secondary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-fedora-23-primary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-fedora-23-secondary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat5-auxiliary</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat5-beta</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat5-former</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat5-release</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat5-rhx</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat6-beta</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat6-legacy-former</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat6-legacy-release</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat6-legacy-rhx</Path>
+            <Path fileType="config">/etc/pki/mock/RPM-GPG-KEY-redhat6-release</Path>
+            <Path fileType="config">/etc/security/console.apps/mock</Path>
+            <Path fileType="executable">/usr/bin/mock</Path>
+            <Path fileType="executable">/usr/bin/mockchain</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/__init__.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/__init__.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/backend.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/backend.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/backend.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/buildroot.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/buildroot.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/buildroot.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/exception.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/exception.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/exception.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/mounts.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/mounts.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/mounts.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/package_manager.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/package_manager.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/package_manager.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugin.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugin.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugin.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/bind_mount.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/bind_mount.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/bind_mount.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/ccache.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/ccache.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/ccache.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/chroot_scan.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/chroot_scan.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/chroot_scan.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/compress_logs.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/compress_logs.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/compress_logs.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/lvm_root.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/lvm_root.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/lvm_root.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/mount.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/mount.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/mount.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/package_state.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/package_state.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/package_state.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/pm_request.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/pm_request.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/pm_request.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/root_cache.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/root_cache.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/root_cache.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/selinux.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/selinux.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/selinux.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/sign.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/sign.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/sign.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/tmpfs.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/tmpfs.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/tmpfs.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/yum_cache.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/yum_cache.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/plugins/yum_cache.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/scm.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/scm.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/scm.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/state.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/state.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/state.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/trace_decorator.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/trace_decorator.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/trace_decorator.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/uid.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/uid.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/uid.pyo</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/util.py</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/util.pyc</Path>
+            <Path fileType="library">/usr/lib/python2.7/site-packages/mockbuild/util.pyo</Path>
+            <Path fileType="library">/usr/lib64/sysusers.d/mock.conf</Path>
+            <Path fileType="executable">/usr/sbin/mock</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/mock</Path>
+            <Path fileType="data">/usr/share/bash-completion/completions/mockchain</Path>
+            <Path fileType="man">/usr/share/man/man1/mock.1</Path>
+            <Path fileType="man">/usr/share/man/man1/mockchain.1</Path>
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2016-02-06</Date>
+        <Update release="7">
+            <Date>2018-12-24</Date>
             <Version>1.2.12</Version>
             <Comment>Packaging update</Comment>
-            <Name>Ikey Doherty</Name>
-            <Email>ikey@solus-project.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>
